@@ -316,7 +316,7 @@ span{
 
 /* Projects Section Styles */
 .projets{
-    min-height: auto;
+    /* min-height: auto; */
     padding-bottom: 7rem;
 }
 
@@ -583,4 +583,45 @@ span{
 }
 */
 
+/* Style Added by vala */
+
+div p {
+    text-align: justify;
+}
+
+/* Responsivness  */
+
+/* Large device 1025 to 1200 px */
+@media (max-width: 1200px) {
+    div p{
+        font-size: 1.5rem!important;
+    }
+}
+
+/* Medium device 769 to 1024px */
+@media (max-width: 1204px) {
+    
+}
+
+@media (max-width:900px) {
+    #profil{
+        flex-direction: column;
+    }
+
+    .profil-img{
+        order : 2;
+    }
+
+    div p{
+        text-align: center;
+    }
+
+    .profil-content .heading{
+        text-align : center;
+    }
+
+    .profil-content{
+        text-align: center;
+    }
+}
     
