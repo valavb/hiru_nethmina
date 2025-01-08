@@ -2,225 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hirusha Pethiyagoda | Portfolio BTS SIO</title>
+    <title>Responsive Portfolio</title>
     <link rel="icon" href="logo-image.png">
 
-    <!---- box icons ---->
+    <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!---- Custom CSS ---->
-    <link rel="stylesheet" href="css/profil.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/profil.css ">
 </head>
 <body>
-    <!---- Header Section ---->
+    <!-- Header Section -->
     <header class="header">
-        <a href="index.html" class="logo">Portfolio</a>
+        <div class="container">
+            <a href="index.html" class="logo">Portfolio</a>
 
-        <nav class="navbar">
-            <a href="index.html#accueil" class="active">Accueil</a>
-            <a href="index.html#profil">Profil</a>  
-            <a href="index.html#projets">Projets</a>    
-            <a href="index.html#bts">BTS</a>    
-            <a href="veille.html">Veille Technologique</a>    
-            <a href="index.html#contact">Contact</a>    
-        </nav>
+            <nav class="navbar">
+                <a href="#accueil" class="active">Accueil</a>
+                <a href="#profil">Profil</a>
+                <a href="#projets">Projets</a>
+                <a href="#bts">BTS</a>
+                <a href="#veille">Veille</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-        <div class="bx bx-moon" id="darkMode-icon"></div>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-moon" id="darkMode-icon"></div>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
     </header>
 
-    <!---- profil Section Design ---->
+    <!-- Profile Section -->
     <section class="profil" id="profil">
-        <div class="profil-img">
-            <img src="img/about.png" alt="">
-        </div>
+        <div class="container">
+            <div class="profil-grid">
+                <div class="profil-img">
+                    <img src="img/about.png" alt="Profile Picture">
+                </div>
 
-        <div class="profil-content">
-            <h2 class="heading">Mon <span>Profil</span></h2>
-            <p>Étudiant en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métier), je suis passionné par le code et le développement logiciel. Curieux et créatif, j'aime explorer les technologies modernes pour concevoir des solutions innovantes et répondre aux besoins des utilisateurs.
-                À travers mes études, je me spécialise dans la programmation, la gestion de bases de données, et la création d'applications métiers, tout en développant des compétences en gestion de projets et en analyse fonctionnelle. Toujours à la recherche de nouveaux défis, je suis déterminé à transformer ma passion pour l'informatique en une carrière enrichissante.
-            </p>
+                <div class="profil-content">
+                    <h2>Mon <span>Profil</span></h2>
+                    <p>Passionate about software development, I specialize in creating innovative solutions to meet user needs. My studies focus on programming, database management, and application development, aiming for a rewarding career in IT.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <!----About Section Start---->
-    <section class="about section" id="about">
+
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-content padd-15">
-                    <div class="row">
-                        <div class="personal-info padd-15">
-                            <div class="row">
-                                <div class="info-item padd-15">
-                                    <p>Birthday : <span>16 Oct 2005</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Age : <span>18</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Website : <span>www.hirusha-perera.com</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>E-mail : <a href = "mailto: hirushaperera16102005@gmail.com">Click to get Email</a></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Degree : <span>BAC +1</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Phone : <span>+33 7 58 25 23 95</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>City : <span>Colombes</span></p>
-                                </div>
-                                <div class="info-item padd-15">
-                                    <p>Freelance : <span>Available</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills padd-15">
-                            <div class="row">
-                                <div class="skill-item padd-15">
-                                    <h5>HTML</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 86%;"></div>
-                                        <div class="skill-percent">86%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>PHP</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 69%;"></div>
-                                        <div class="skill-percent">69%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>CSS</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 82%;"></div>
-                                        <div class="skill-percent">82%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>JS</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 65%;"></div>
-                                        <div class="skill-percent">65%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="personal-info">
+                    <p>Birthday: <span>16 Oct 2005</span></p>
+                    <p>Age: <span>18</span></p>
+                    <p>Website: <span>www.hirusha-perera.com</span></p>
+                    <p>Email: <a href="mailto:hirushaperera16102005@gmail.com">Click to Email</a></p>
+                    <p>Degree: <span>BAC +1</span></p>
+                    <p>Phone: <span>+33 7 58 25 23 95</span></p>
+                    <p>City: <span>Colombes</span></p>
+                    <p>Freelance: <span>Available</span></p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-item">
+                        <span>HTML</span>
+                        <div class="progress"><div class="progress-bar" style="width: 86%;"></div></div>
                     </div>
-                    <div class="row">
-                        <div class="education padd-15">
-                            <h3 class="title">Education</h3>
-                            <div class="row">
-                                <div class="timeline-box padd-15">
-                                    <div class="timeline shadow-dark">
-                                      <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - Actual
-                                                                                                </h3>
-                                            <h4 class="timeline-title">University La Tournelle</h4>
-                                            <p class="timeline-text">University La Tournelle is situated in La Garenne Colombes and its specialed in website developpement and network management courses.</p>
-                                        </div>
-                                        <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2020 - 2023
-                                                                                                </h3>
-                                            <h4 class="timeline-title">Vocational High School Claude Chappe</h4>
-                                            <p class="timeline-text">Vocational High School Claude Chappe is a High School which is situated in Nanterre and which is a part of the Academy Of Versailles.</p>
-                                        </div>
-                                        <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2018 - 2020
-                                            </h3>
-                                            <h4 class="timeline-title">College Maurice Utrillo</h4>
-                                            <p class="timeline-text">College Maurice Utrillo is a college which offers the possibility of following the section(s): ULIS, Section Sport.</p>
-                                        </div>
-                                        <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2009-2018
-                                            </h3>
-                                            <h4 class="timeline-title">Lyceum International School</h4>
-                                            <p class="timeline-text">Lyceum International School is a school which allows the students to grow with international ideals and character, in a multi-ethnic, multi-cultural and multi-religious school environment.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="experience padd-15">
-                            <h3 class="title">Experience</h3>
-                            <div class="row">
-                                <div class="timeline-box padd-15">
-                                    <div class="timeline shadow-dark">
-                                      <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> Dec 2022 - Oct 2023
-                                            </h3>
-                                            <h4 class="timeline-title">Montgallet Informatique</h4>
-                                            <p class="timeline-text">Montgallet Informatique is a laptop, mobile phones and tablet devices repairing center. My post in the company was the secondary technicien.</p>
-                                        </div>
-                                        <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> May 2022 - Jul 2022
-                                            </h3>
-                                            <h4 class="timeline-title">Sinatek</h4>
-                                            <p class="timeline-text">Sinatek is a Gaming PC Building, Laptop Repairing, and computer items selling society. The society Sinatek is situated in Mongallet, France.</p>
-                                        </div>
-                                        <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> Nov 2021 - Jan 2022
-                                            </h3>
-                                            <h4 class="timeline-title">Code Lab</h4>
-                                            <p class="timeline-text">Code Lab Paris is a Website Designing, Graphic Designing company which is situated in Franconville, France.</p>
-                                        </div>
-                                        <!----Timeline Item---->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> Sep 2019 - Dec 2019
-                                            </h3>
-                                            <h4 class="timeline-title">Embassy of Sri Lanka</h4>
-                                            <p class="timeline-text">Embassy of Sri Lanka in France is situated in Porte Dauphine in France. Experienced in Site maintance section, worked as a stagiaire for few months as a formation for educational purposes. Gratification certificate obtained.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="skill-item">
+                        <span>CSS</span>
+                        <div class="progress"><div class="progress-bar" style="width: 82%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                        <div class="progress"><div class="progress-bar" style="width: 69%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress"><div class="progress-bar" style="width: 65%;"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!----About Section End---->
-        <!---- Footer Section Design ---->
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2025 par Hirusha Pethiyagoda | Tous droits réservé</p>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2023 - Actual</h3>
+                    <h4>University La Tournelle</h4>
+                    <p>University La Tournelle is situated in La Garenne Colombes and is specialized in website development and network management courses.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2020 - 2023</h3>
+                    <h4>Vocational High School Claude Chappe</h4>
+                    <p>Vocational High School Claude Chappe is situated in Nanterre and is a part of the Academy of Versailles.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2018 - 2020</h3>
+                    <h4>College Maurice Utrillo</h4>
+                    <p>College Maurice Utrillo offers the possibility of following sections such as ULIS and Section Sport.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2009 - 2018</h3>
+                    <h4>Lyceum International School</h4>
+                    <p>Lyceum International School fosters international ideals and character in a multi-ethnic, multi-cultural, and multi-religious environment.</p>
+                </div>
             </div>
-    
-            <div class="footer-iconTop">
-                <a href="#accueil"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Dec 2022 - Oct 2023</h3>
+                    <h4>Montgallet Informatique</h4>
+                    <p>Montgallet Informatique is a laptop, mobile phones, and tablet devices repairing center. My role was as a secondary technician.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>May 2022 - Jul 2022</h3>
+                    <h4>Sinatek</h4>
+                    <p>Sinatek specializes in Gaming PC Building, Laptop Repairing, and selling computer items. Located in Mongallet, France.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Nov 2021 - Jan 2022</h3>
+                    <h4>Code Lab</h4>
+                    <p>Code Lab Paris is a Website and Graphic Designing company situated in Franconville, France.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Sep 2019 - Dec 2019</h3>
+                    <h4>Embassy of Sri Lanka</h4>
+                    <p>Experienced in Site maintenance as a stagiaire for a few months at the Embassy of Sri Lanka in France. Gratification certificate obtained.</p>
+                </div>
             </div>
-        </footer>
-    
-        <!---- Custom JS ---->
-        <script src="js/script.js"></script>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hirusha Pethiyagoda. All Rights Reserved.</p>
+            <a href="#accueil" class="back-to-top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
