@@ -22,3 +22,12 @@ let header = document.querySelector('.header');
 
 header.classList.toggle('sticky',window.scrollY > 100);
 };
+
+    // Toggle the navbar
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active'); // Toggle active class
+    });
+

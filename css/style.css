@@ -585,6 +585,41 @@ span{
 
 /* Style Added by vala */
 
+/* Hide the navbar by default for smaller screens */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: max-height 0.3s ease-out;
+}
+
+/* For small devices, initially hide the navbar */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Vertical stack */
+        background-color: var(--bg-color);
+        padding: 1rem;
+        position: absolute;
+        top: 100%; /* Below the header */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px var(--shadow-color);
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when toggled */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon */
+        cursor: pointer;
+    }
+}
+
+
 div p {
     text-align: justify;
 }
@@ -639,4 +674,133 @@ div p {
         margin-top: 5rem!important;
     }
 
+    .profil-img img{
+        width: 50vw;
+    }
+    
+    .heading,.projets-box h3{
+        font-size: 2.5rem;
+        
+    }
+
 }
+
+/* home  */
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 90%;
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .home-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 1rem 0.5rem 2rem 0;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 1rem 2.4rem;
+    }
+
+    .home-img img {
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    .profession-container {
+        display: none; /* Hide rotating professions for mobile */
+    }
+}
+
+@media (max-width: 1280px) {
+    #accueil{
+        flex-direction: column!important;
+
+    }
+
+    .profession-container{
+        /* position:relative!important;
+        transform: rotate(90deg)!important;
+        top: 0!important;
+        right: 0!important; */
+        display: none;
+    }
+
+    .home-img{
+        display: none;
+    }
+
+    
+}
+
+
+/* General table styling */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Header styling */
+.comparison-table thead {
+    background-color: #f2f2f2;
+}
+
+.comparison-table th {
+    font-weight: bold;
+}
+
+/* Responsive styling */
+.comparison-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.comparison-table th, .comparison-table td {
+    white-space: normal; /* Allow text wrapping */
+    word-wrap: break-word;
+}
+
+/* Optional: Add some spacing and alignment for smaller screens */
+@media screen and (max-width: 768px) {
+    .comparison-table th, .comparison-table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+    
+    .comparison-table {
+        margin: 10px 0;
+    }
+}
+
+
+
