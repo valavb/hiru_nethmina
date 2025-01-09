@@ -592,6 +592,13 @@ div p {
     .application-specifique-img,.technologie-innovation-img,.ethique-reglementation-img,.exemple-concret-img,.perspective-img{
         order: 2;
     }
+
+    .application-specifique-img img,.technologie-innovation-img img,.ethique-reglementation-img img,.exemple-concret-img img,.perspective-img img{
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+          
+    }
 }
 
 @media (max-width: 961px) {
