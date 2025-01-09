@@ -551,3 +551,66 @@ span{
 div p {
     text-align: justify;
 }
+
+
+/* Menu Icon Styling */
+/* Responsive Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: max-height 0.3s ease-out;
+}
+
+/* For small devices, initially hide the navbar */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Vertical stack */
+        background-color: var(--bg-color);
+        padding: 1rem;
+        position: absolute;
+        top: 100%; /* Below the header */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px var(--shadow-color);
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when toggled */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon */
+        cursor: pointer;
+    }
+}
+
+/* Menu icon styling for all sizes */
+#menu-icon {
+    display: none; /* Hidden by default */
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+
+
+
+@media (max-width:900px) {
+    #application-specifique,#technologie-innovation,#ethique-reglementation#exemple-concret {
+        flex-direction: column;
+    }
+
+    .perspective-img,.exemple-concret-img,.ethique-reglementation-img,.technologie-innovation-img{
+        order : 2;
+    }
+
+    div p{
+        text-align: center;
+    }
+}
+
+

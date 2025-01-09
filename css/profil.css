@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+
+:root{
+    --bg-color: #fdfdfd;
+    --text-color: #333;
+    --main-color: #754ef9;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0,0,0, .2);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -33,8 +42,8 @@ h2 {
 h2 span {
     color: #754ef9;
 }
+/* 
 
-/* Header Styles */
 .header {
     position: fixed;
     width: 100%;
@@ -68,7 +77,86 @@ h2 span {
 .header .navbar a:hover,
 .header .navbar a.active {
     color: #754ef9;
+} */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    transition: .5s;
 }
+
+.header.sticky{
+    background: var(--bg-color);
+    box-shadow: 0 .1rem 1rem var(--shadow-color);
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.7rem;
+    /* color: var(--white-color); */
+    font-weight: 500;
+    margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a{
+    color: var(--text-color);
+}
+
+.header.sticky .navbar a.active{
+    color: var(--main-color);
+}
+
+.header.sticky .navbar a::before{
+    background: var(--main-color);
+    opacity: .7;
+}
+
+.navbar a.active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: .2rem;
+    /* background: var(--white-color); */
+}
+
+#darkMode-icon{
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.header.sticky #darkMode-icon{
+    color: var(--text-color);
+    opacity: .9;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+/* .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: max-height 0.3s ease-out;
+} */
 
 /* Profile Section */
 .profil {
@@ -225,3 +313,30 @@ h2 span {
         cursor: pointer;
     }
 }
+
+
+/* For small devices, initially hide the navbar */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hidden by default */
+        flex-direction: column; /* Vertical stack */
+        background-color: var(--bg-color);
+        padding: 1rem;
+        position: absolute;
+        top: 100%; /* Below the header */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px var(--shadow-color);
+        z-index: 99;
+    }
+
+    .navbar.active {
+        display: flex; /* Show navbar when toggled */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon */
+        cursor: pointer;
+    }
+}
+

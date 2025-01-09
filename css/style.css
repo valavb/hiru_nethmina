@@ -58,7 +58,7 @@ body{
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
+    color: var(--text-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
