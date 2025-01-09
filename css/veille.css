@@ -546,25 +546,55 @@ span{
     color: #333;
 }
 
-/* CSS Added by valavbs */
-
+/* CSS added by vala */
 div p {
     text-align: justify;
 }
 
 
-/* Menu Icon Styling */
-/* Responsive Navbar */
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 1rem;
-    transition: max-height 0.3s ease-out;
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
 }
 
-/* For small devices, initially hide the navbar */
-@media (max-width: 768px) {
+#darkMode-icon{
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+@media (max-width:1308px) {
+    #accueil{
+        flex-direction: column;
+    }
+    .profession-container ,.home-img{
+        display: none; /* Hide rotating professions for mobile */
+    }
+    .home .home-content{
+        width: 80%;
+        max-width: unset;
+        text-align: center;
+    }
+    .navbar a{
+        color : var(--text-color)
+    }
+}
+
+@media  (max-width:989px) {
+    #application-specifique,#technologie-innovation,#ethique-reglementation,#exemple-concret,#perspective{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #application-specifique h2,#technologie-innovation h2,#ethique-reglementation h2,#exemple-concret h2,#perspective h2{
+        text-align: center;
+    }
+    .application-specifique-img,.technologie-innovation-img,.ethique-reglementation-img,.exemple-concret-img,.perspective-img{
+        order: 2;
+    }
+}
+
+@media (max-width: 961px) {
     .navbar {
         display: none; /* Hidden by default */
         flex-direction: column; /* Vertical stack */
@@ -586,31 +616,14 @@ div p {
         display: block; /* Show menu icon */
         cursor: pointer;
     }
-}
 
-/* Menu icon styling for all sizes */
-#menu-icon {
-    display: none; /* Hidden by default */
-    font-size: 2.4rem;
-    cursor: pointer;
-    color: var(--text-color);
-}
-
-
-
-
-@media (max-width:900px) {
-    #application-specifique,#technologie-innovation,#ethique-reglementation#exemple-concret {
-        flex-direction: column;
+    #darkMode-icon{
+        margin-right: 10px;    
     }
-
-    .perspective-img,.exemple-concret-img,.ethique-reglementation-img,.technologie-innovation-img{
-        order : 2;
-    }
-
     div p{
         text-align: center;
     }
+    .home-content h1,div h2{
+        font-size: 4rem!important;
+    }
 }
-
-
