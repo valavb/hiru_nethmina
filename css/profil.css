@@ -97,7 +97,7 @@ h2 span {
 }
 
 .logo{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--main-color);
     font-weight: 600;
     cursor: default;
@@ -106,8 +106,8 @@ h2 span {
 
 .navbar a {
     position: relative;
-    font-size: 1.7rem;
-    /* color: var(--white-color); */
+    font-size: 1.2rem;
+    color: var(--text-color);
     font-weight: 500;
     margin-right: 3.5rem;
 }
@@ -136,8 +136,9 @@ h2 span {
 }
 
 #darkMode-icon{
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 .header.sticky #darkMode-icon{
@@ -146,7 +147,7 @@ h2 span {
 }
 
 #menu-icon{
-    font-size: 3.6rem;
+    font-size: 2rem;
     color: var(--text-color);
     display: none;
 }
@@ -316,7 +317,7 @@ h2 span {
 
 
 /* For small devices, initially hide the navbar */
-@media (max-width: 768px) {
+@media (max-width: 1179px) {
     .navbar {
         display: none; /* Hidden by default */
         flex-direction: column; /* Vertical stack */
