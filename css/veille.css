@@ -571,7 +571,7 @@ div p {
         display: none; /* Hide rotating professions for mobile */
     }
     .home .home-content{
-        width: 80%;
+        width: 90%;
         max-width: unset;
         text-align: center;
     }
