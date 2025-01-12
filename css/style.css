@@ -103,8 +103,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 7% 2rem;
+    padding: 20rem 7% 2rem;
 }
 
 .home{
@@ -259,25 +258,33 @@ section{
     border-radius: 50%;
 }
 
-.home .profession-container .overlay{
+.home .profession-container .overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
+    top: 50%; /* Center overlay vertically */
+    left: 50%; /* Center overlay horizontally */
+    transform: translate(-50%, -50%); /* Center the overlay */
+    width: 768px;
+    height: 768px;
     border-top: 384px solid var(--main-color);
     border-right: 384px solid var(--main-color);
     border-bottom: 384px solid var(--main-color);
-    border-left: 384px solid transparent; 
+    border-left: 384px solid transparent;
+    z-index: 1; /* Place it below the image */
 }
 
-.home-img img{
+
+.home-img img {
     position: absolute;
-    bottom: 80px;
-    right: 0;
-    width: 27%;
-    pointer-events: none;
+    top: 50%; /* Center vertically */
+    /* left: 90%; Center horizontally */
+    right: -300px;
+    transform: translate(-50%, -50%); /* Adjust positioning to center */
+    width: 530px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    pointer-events: none; /* Ensure it doesn't interfere with user interaction */
+    z-index: 2; /* Place it above the overlay */
 }
+
 
 span{
     color: var(--main-color);
@@ -438,9 +445,9 @@ span{
 }
 
 .comparison-table {
-    width: 100%;
+    width: 95%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin:0 auto;
 }
 
 .comparison-table th, .comparison-table td {
@@ -758,7 +765,7 @@ div p {
 
 
 /* General table styling */
-.comparison-table {
+/* .comparison-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
@@ -769,7 +776,7 @@ div p {
 .comparison-table th, .comparison-table td {
     border: 1px solid #ddd;
     padding: 8px;
-}
+} */
 
 /* Header styling */
 .comparison-table thead {
@@ -781,11 +788,11 @@ div p {
 }
 
 /* Responsive styling */
-.comparison-table {
+/* .comparison-table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
-}
+} */
 
 .comparison-table th, .comparison-table td {
     white-space: normal; /* Allow text wrapping */
